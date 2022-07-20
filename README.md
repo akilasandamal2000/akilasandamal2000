@@ -46,13 +46,20 @@ In this lab the main objective is to built a water level controlling system for 
 
 ## RESULTS
 
-CASE 1: when the sensor 1 is ON the MOTOR 1 gets ON (MOTOR 2 OFF)
+#### CASE 1: when the sensor 1 is ON the MOTOR 1 gets ON (MOTOR 2 OFF)
+
+As shown in the following diagram the first case is when the water level decreases and comes upto the level of sensor 1, the motor 1 starts to work. Where motor 1 is the motor which pumps in the water in to the tank. 
 ![Example screenshot](./img/screenshot.png)
 
-CASE 2: when the sensor 1 and sensor 2 are ON the MOTOR 1 gets ON (MOTOR 2 OFF)
+#### CASE 2: when the sensor 1 and sensor 2 are ON the MOTOR 1 gets ON (MOTOR 2 OFF)
+
+Therefore as the motor 1 is working the water gets filled to the tank. When the wter level reaches the level of the sensor 2 the motor 1 keeps working to pump water in to the tank. where motor 2 is off at both the above case 1 and case 2.
+
 ![Example screenshot](./img/screenshot.png)
 
-CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and runs for a time of 500ms and gets OFF (MOTOR 1 OFF)
+#### CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and runs for a time of 500ms and gets OFF (MOTOR 1 OFF)
+
+In this case when the water level reach upto the level of the sensor 3 the motor 1 gets off and the motor 2 gets started and the water is pumped out of the tank for 500ms and goes off.  
 ![Example screenshot](./img/screenshot.png)
 
 
