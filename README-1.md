@@ -86,8 +86,8 @@ CASE 3: when the sensor 1, sensor 2 and sensor 3 are ON the MOTOR 2 starts and r
 //ISR SET INTERRUPT SERVICE ROUTINE
 
 void __interrupt() isr(void){
-
-    if (INTF==1) //Check if the interrupt is On
+if (INTF==1) //Check if the interrupt is On
+    
    {
     INTF=0; //Clear the interrupt
     
@@ -95,13 +95,13 @@ void __interrupt() isr(void){
 
    if(RB2==1 && RB1==1 && RB0==1){
        
-    RC2=0; // Motor 1 is OFF
+ RC2=0; // Motor 1 is OFF
     RC1=1; // Motor 2 is ON
     __delay_ms(500);  //MOTOR 2 is kept ON for 500ms
     RC1=0;    //Motor 2 is off
     
      }
-    }
+    }  
 }
       
     
